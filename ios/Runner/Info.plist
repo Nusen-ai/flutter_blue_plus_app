@@ -2,6 +2,17 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<!-- 蓝牙权限申请文案（iOS 13+） -->
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>需要蓝牙权限连接硬件设备</string>
+	<!-- iOS 12及以下兼容 -->
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>需要蓝牙权限连接硬件设备</string>
+	<!-- 开启BLE硬件支持 -->
+	<key>UIBackgroundModes</key>
+	<array>
+  		<string>bluetooth-central</string> <!-- 后台蓝牙连接 -->
+	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>

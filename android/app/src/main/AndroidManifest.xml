@@ -42,4 +42,30 @@
             <data android:mimeType="text/plain"/>
         </intent>
     </queries>
+<!--    &lt;!&ndash; 基础蓝牙权限（Android 12-） &ndash;&gt;-->
+<!--    <uses-permission android:name="android.permission.BLUETOOTH" android:maxSdkVersion="30" />-->
+<!--    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" android:maxSdkVersion="30" />-->
+
+<!--    &lt;!&ndash; Android 12+ 蓝牙扫描/连接权限（核心） &ndash;&gt;-->
+<!--    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />-->
+<!--    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />-->
+
+<!--    &lt;!&ndash; Android 11及以下 扫描蓝牙需要位置权限 &ndash;&gt;-->
+<!--    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" android:maxSdkVersion="30" />-->
+<!--    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" android:maxSdkVersion="30" />-->
+
+<!--    &lt;!&ndash; 声明BLE硬件支持 &ndash;&gt;-->
+<!--    <uses-feature android:name="android.hardware.bluetooth_le" android:required="true" />-->
+
+<!--    &lt;!&ndash; 可选：后台蓝牙运行（如需后台连接） &ndash;&gt;-->
+<!--    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />-->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+
+    <!-- Android 12+ 新增权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
 </manifest>
