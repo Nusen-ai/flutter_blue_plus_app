@@ -51,6 +51,9 @@ build/
 # ========== iOS/macOS 自动生成文件 ==========
 /ios/Flutter/Debug.xcconfig
 /ios/Flutter/Release.xcconfig
+ios/Flutter/Flutter.framework/
+ios/Flutter/Generated.xcconfig
+macos/Flutter/Flutter.framework/
 ios/Flutter/*.xcconfig
 macos/Flutter/*.xcconfig
 macos/Flutter/GeneratedPluginRegistrant.swift
@@ -68,6 +71,7 @@ macos/Flutter/GeneratedPluginRegistrant.swift
 /windows/generated_plugins.cmake
 windows/flutter/generated_plugin_registrant.*
 windows/flutter/generated_plugins.*
+windows/flutter/ephemeral/
 
 # ========== 可选：IDE本地配置（如VSCode） ==========
 .vscode/
